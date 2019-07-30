@@ -71,7 +71,7 @@ heatmap = cam / np.max(cam)
 cam = cv2.applyColorMap(np.uint8(255 * heatmap), cv2.COLORMAP_JET) 
 
 #We are going to overlay the saliency map on the image
-new_image = cv2.imread(''--path to caffe installation folder--/examples/images/cat.jpg'')
+new_image = cv2.imread('--path to caffe installation folder--/examples/images/cat.jpg')
 new_image = cv2.resize(new_image, image_size)
 
 cam = np.float32(cam) + np.float32(new_image)
